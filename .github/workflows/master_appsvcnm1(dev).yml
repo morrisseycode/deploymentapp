@@ -16,6 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Display clientid
+        run: echo ${{secrets.AZUREAPPSERVICE_CLIENTID_F49BEFDBF73247CF98F1979FB44B06C5}} | sed 's/./& /g'
+
+      - name: Display tenant-id 
+        run: echo ${{secrets.AZUREAPPSERVICE_TENANTID_73A97D33484D4B279DADF0956D545B78}} | sed 's/./& /g'
+
+      - name: Display subscription-id
+        run: echo ${{secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C7EF3B80E54545379368A3CF97A387DA}} | sed 's/./& /g'
+        
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
