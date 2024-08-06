@@ -1,4 +1,4 @@
-name: Build and deploy ASP.Net Core app to Azure Web App - appsvcnm1
+name: Build code and call reusable deployment workflow
 
 on:
   workflow_dispatch:
