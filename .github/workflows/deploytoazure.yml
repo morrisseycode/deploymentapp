@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+      - 'releases/**'
   workflow_dispatch:
 
 jobs:
