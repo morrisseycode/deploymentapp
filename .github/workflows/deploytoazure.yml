@@ -62,5 +62,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'appsvcnm1'
+          slot-name: 'production'
           package: .
           
