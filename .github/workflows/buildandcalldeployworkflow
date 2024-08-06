@@ -29,4 +29,4 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
 
   call-deployment-workflow-in-repo:
-    uses: ./.github/workflows/deployworkflow.yml
+    uses: ./.github/workflows/reusable-deployment-workflow.yml
