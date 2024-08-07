@@ -31,8 +31,5 @@ jobs:
   call-deployment-workflow-in-repo:
     needs: build_job
     uses: ./.github/workflows/reusable-deployment-workflow.yml
-    secrets:
-      client_id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0431404336224C2AA26CEDDB755B239D }}
-      tenant_id: ${{ secrets.AZUREAPPSERVICE_TENANTID_70BDE5FDD149493C9420CD7717961ADD }}
-      subscription_id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_95B47F2B739F45639FFCA87EF0187C22 }}
+    secrets: inherit
       
