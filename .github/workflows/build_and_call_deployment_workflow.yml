@@ -28,8 +28,10 @@ jobs:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
 
-  call-deployment-workflow-in-repo:
-    needs: build_job
-    uses: ./.github/workflows/reusable-deployment-workflow.yml
-    secrets: inherit
+      - run: echo 'This is where we call the secondary workflow'
+    
+#  call-deployment-workflow-in-repo:
+#    needs: build_job
+#    uses: ./.github/workflows/reusable-deployment-workflow.yml
+#    secrets: inherit
       
