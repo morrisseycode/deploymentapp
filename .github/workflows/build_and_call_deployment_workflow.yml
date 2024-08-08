@@ -30,8 +30,8 @@ jobs:
 
       - run: echo 'This is where we call the secondary workflow'
     
-#  call-deployment-workflow-in-repo:
-#     uses: morrisseycode/.github/workflows/reusable1.yml@main
+  call-deployment-workflow-in-repo:
+    uses: morrisseycode/.github/workflows/reusable1.yml@main
 
 #    needs: build_job
 #    uses: ./.github/workflows/reusable-deployment-workflow.yml
