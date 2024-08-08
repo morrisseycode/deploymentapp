@@ -32,6 +32,7 @@ jobs:
     
   call-deployment-workflow-in-repo:
     uses: morrisseycode/.github/.github/workflows/reusable1.yml@main
+    needs: build_job
 
 #    needs: build_job
 #    uses: ./.github/workflows/reusable-deployment-workflow.yml
