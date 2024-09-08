@@ -2,7 +2,6 @@ name: SonarCloud analysis
 
 on:
   schedule:
-    - cron:  '30 5 * * *'
   workflow_dispatch:
 
 jobs:
